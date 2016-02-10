@@ -1,12 +1,16 @@
 $(function() {
 
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
+	var searchElement = $('#search');
 
-	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+	$('img, a').on('dragstart', function(event) { event.preventDefault(); });
 
+	searchElement.on('blur', function() {
+		if(searchElement.val()=='') {
+			searchElement.animate({width:'0'},200)
+		}
+	});
+	$('.search-icon').on('click hover', function() {
+		searchElement.animate({width:'186px'},200);
+		searchElement.focus();
+	})
 });

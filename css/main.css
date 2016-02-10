@@ -1,0 +1,107 @@
+/**
+ * Eric Meyer's Reset CSS v2.0
+(http://meyerweb.com/
+eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@media only screen and (max-width: 768px) {
+}
+
+.main-container{
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 100%;
+	background-color: #fff;
+}
+
+.main-head{
+	border: solid 1px green;
+	position: relative;
+	height: 70px;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translate(-50%, -50%);
+}
+
+.top-menu{
+	display: inline-block;
+}
+
+.top-menu>ul>li{
+	border: solid 1px red;
+	display: inline-block;
+	min-width: 100px;
+	margin: 5px 20px;
+}
+
+.search-form{
+	display: inline-block;
+	float: right;
+}
+
+#search{
+	width: 0;
+	border: 1px solid #606060;
+}
+
+.search-icon{
+	width: 42px;
+	height: 42px;
+	background: url('../img/search.png') no-repeat center;
+	background-color: #fff;
+	border:solid 1px #606060;
+	margin-top: 20px;
+}
+
+.search-icon:hover{
+	background: url('../img/search-hover.png') no-repeat center;
+	background-color: #606060;
+	border: none;
+}
