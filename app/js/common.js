@@ -1,4 +1,11 @@
 $(function() {
+	Route.listen();
+	Route.map('#/category-all').to(function(){
+		$('#content').load('category-all.html');
+	});
+	Route.map('#/category/categoryId').to(function(){
+		$('#content').load('category.html');
+	});
 
 	var searchElement = $('#search');
 
